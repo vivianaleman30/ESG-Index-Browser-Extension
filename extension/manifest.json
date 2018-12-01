@@ -1,0 +1,14 @@
+{
+    "name": "ESG Index by Protect US",
+    "version": "0.0.1",
+    "description": "Make informed shopping decisions. Easily see how COOL a company is when you buy from them.",
+    "permissions": ["activeTab", "declarativeContent"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
