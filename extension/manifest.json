@@ -8,13 +8,15 @@
         "48": "icons/48x48.png",
         "128": "icons/128x128.png"
     },
-    "permissions": ["activeTab", "declarativeContent"],
-    "content_scripts": [
-        {
-            "matches": ["*://*.amazon.com/*"],
-            "css": ["style.css"],
-            "js": ["esgindexdata.js", "content_script.js"]
-        }
-    ],
+    "permissions": ["*://*.amazon.com/*", "activeTab", "declarativeContent", "webNavigation"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [{
+        "matches": ["*://*.amazon.com/*"],
+        "css": ["style.css"],
+        "js": ["esgindexdata.js", "content_script.js"]
+    }],
     "manifest_version": 2
 }
