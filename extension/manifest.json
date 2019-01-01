@@ -1,6 +1,7 @@
 {
     "name": "ESG Index by Protect US",
-    "version": "0.0.1",
+    "author": "Daniel Harder",
+    "version": "0.0.2",
     "description": "Join us today in shopping more ethically by using the ESG Index by Protect US. A browser extension that delivers real time data on political spending, sustainabilty, labor practices, etc... for companies alongside the products they sell when shopping online!",
     "icons": {
         "16": "icons/16x16.png",
