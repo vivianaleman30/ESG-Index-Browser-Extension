@@ -466,6 +466,7 @@ window.esgindexnames = {
 }
 
 window.esgindexscores = {
+"by":-1,
 "amazon":0.7511175464,
 "target":0.2431720265,
 "walmart":0.09408695258,
