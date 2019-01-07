@@ -6,10 +6,10 @@ async function append_scores(score_database, name_database) {
 			var item = items[i].getElementsByClassName('a-size-small')[1];
 			var name = item.innerHTML.toLowerCase();
 			if (name.includes("| <i>political spending rating:")) { continue; }
-			name = name.replace(/[^a-z0-9]/, '');
+			name = name.replace(/[^a-z0-9]/g, '');
 			if (name == "by") {
 				item = items[i].getElementsByClassName('a-size-small')[2]
-				name = item.innerHTML.toLowerCase().replace(/[^a-z0-9]/, '');
+				name = item.innerHTML.toLowerCase().replace(/[^a-z0-9]/g, '');
 			}
 			if (name_database[name]) { name = name_database[name]; }
 			var append = '<span class="esgindexrating"> | <i>Political Spending Rating: ';
@@ -18,7 +18,7 @@ async function append_scores(score_database, name_database) {
 				append += Math.round(score_database[name] * 1000) / 1000;
 			} else {
 				append += 'N/A';
-				append = append.replace(/esgindexrating/, '')
+				append = append.replace(/esgindexrating/g, '')
 				if (score_database[name] == -1) {
 					invalid = true;
 				} else {
