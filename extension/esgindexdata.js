@@ -467,7 +467,7 @@ window.esgindexnames = {
 "kimberlyclarkprofessional":"kimberlyclark",
 "lysol":"reckittbenckiser",
 "cloroxtoiletwand":"clorox",
-"cloroxbathroomcleaners","clorox",
+"cloroxbathroomcleaners":"clorox",
 "tilex":"clorox",
 "kaboom":"churchdwight",
 "scrubbingbubbles":"scjohnson",
@@ -482,7 +482,7 @@ window.esgindexnames = {
 "signaturebylevistrauss":"levistraussco",
 "haggard":"haggardclothingco",
 "amazonessentials":"amazon",
-"wt02":"wickedfashions"
+"wt02":"wickedfashions",
 "28palms":"amazon",
 "ogio":"callawaygolf",
 "swissgear":"group3international",
