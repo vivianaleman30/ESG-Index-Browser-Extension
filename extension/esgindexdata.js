@@ -1095,4 +1095,5 @@ window.esgindexscores = {
 "dfb":0.749,
 "nanhaicorp":0.0,
 "kaocorporation":0.0,
+"churchdwight":0.009,
 }
