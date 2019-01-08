@@ -6,7 +6,7 @@ async function append_scores(score_database, name_database) {
 			var item = items[i].getElementsByClassName('a-size-small')[1];
 			var name = item.innerHTML.toLowerCase();
 			if (name.includes("| <i>political spending rating:")) { continue; }
-			name = name.replace(/[^a-z0-9]/g, '');
+			name = name.replace("&amp;", "&").replace(/[^a-z0-9]/g, '');
 			if (name == "by") {
 				item = items[i].getElementsByClassName('a-size-small')[2]
 				name = item.innerHTML.toLowerCase().replace(/[^a-z0-9]/g, '');
