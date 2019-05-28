@@ -9,13 +9,13 @@
         "48": "icons/48x48.png",
         "128": "icons/128x128.png"
     },
-    "permissions": ["*://*.amazon.com/*", "*://*.yelp.com/*", "activeTab", "declarativeContent", "webNavigation"],
+    "permissions": ["*://*.amazon.com/*", "activeTab", "declarativeContent", "webNavigation"],
     "background": {
         "scripts": ["background.js"],
         "persistent": false
     },
     "content_scripts": [{
-        "matches": ["*://*.amazon.com/*", "://*.yelp.com/*"],
+        "matches": ["*://*.amazon.com/*"],
         "css": ["style.css"],
         "js": ["esgindexdata.js", "content_script.js"]
     }],
