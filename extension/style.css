@@ -1,5 +1,24 @@
+a:link, a:visited {
+text-decoration: none;
+color: #000000;
+}
+
 .esgindexrating {
-    color: "#000";
-    font-size: larger;
-    font-weight: bolder;
+color: #000000;
+font-size: larger;
+font-weight: bolder;
+}
+
+.popupHeader {
+width: calc(416px - 32px);
+}
+
+.popupIconTitle {
+color: #000000;
+font-size: large;
+font-wieght: bold;
+}
+
+.popupOptions {
+font-size: medium;
 }
