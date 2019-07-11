@@ -3,13 +3,16 @@
   "author": "Protect US",
   "version": "0.0.3.3",
   "description": "The ESG Index by Protect US allows you to see the political spending rating of a company when shopping online!",
+  "web_accessible_resources" : [
+   "icons/*.png"
+   ],
   "icons": {
     "16": "icons/16x16.png",
     "32": "icons/32x32.png",
     "48": "icons/48x48.png",
     "128": "icons/128x128.png"
 },
-  "permissions": ["*://*.amazon.com/*", "activeTab", "declarativeContent", "webNavigation"],
+  "permissions": ["*://*.amazon.com/*","*://*.yelp.com/*", "activeTab", "declarativeContent", "webNavigation"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -19,9 +22,9 @@
     "default_popup": "popup.html"
 },
   "content_scripts": [{
-    "matches": ["*://*.amazon.com/*"],
+    "matches": ["*://*.amazon.com/*","*://*.yelp.com/*"],
     "css": ["style.css"],
-    "js": ["esgindexdata.js", "content_script.js"]
+    "js": ["esgindexdata.js", "content_script.js", "living_wage_businesses.js", "content_script_yelp.js"]
 }],
   "manifest_version": 2
 }
