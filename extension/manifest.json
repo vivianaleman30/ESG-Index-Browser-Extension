@@ -24,7 +24,11 @@
   "content_scripts": [{
     "matches": ["*://*.amazon.com/*","*://*.yelp.com/*"],
     "css": ["style.css"],
-    "js": ["esgindexdata.js", "content_script.js", "living_wage_businesses.js", "content_script_yelp.js"]
+    "js": ["esgindexdata.js", "content_script_amazon.js", "living_wage_businesses.js", "content_script_yelp.js"]
+},{
+  "matches": ["*://*.collegeconsensus.com/*"],
+  "css": ["style.css"],
+  "js": ["content_script_collegeconsensus.js"]
 }],
   "manifest_version": 2
 }
